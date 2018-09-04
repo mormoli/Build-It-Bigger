@@ -17,7 +17,7 @@ public class AsyncTaskStringTest {
         //in order to run this test AsyncTask's onPostExecute method must be commented
         //because implementing an interface to get result
         // STEP 4 Add code to test that your Async task successfully retrieves a non-empty string
-        String result = new MainActivity.EndpointsAsyncTask().execute().get();
+        String result = new EndpointsAsyncTask().execute().get();
         assertFalse(TextUtils.isEmpty(result));
     }
 }
